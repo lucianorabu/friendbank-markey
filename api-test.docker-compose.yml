@@ -16,7 +16,7 @@ services:
       - .env
     environment:
       - API_URL=http://api:5000
-      - MONGODB_URL=mongodb+srv://doadmin:0392eR5oP86jtM1B@db-mongodb-nyc3-33591-340c1998.mongo.ondigitalocean.com
+      - MONGODB_URL=mongodb://admin:secret@mongo:27017
     volumes:
       - type: volume
         source: servicesTest
@@ -36,7 +36,7 @@ services:
       - .env
     environment:
       - PORT=5000
-      - MONGODB_URL=mongodb+srv://doadmin:0392eR5oP86jtM1B@db-mongodb-nyc3-33591-340c1998.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-nyc3-33591
+      - MONGODB_URL=mongodb://admin:secret@mongo:27017
       - DEBUG_CRM_SIGNUP=true
       - MAIL_DEBUG=true
     volumes:
@@ -51,8 +51,8 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=doadmin
-      - MONGO_INITDB_ROOT_PASSWORD=0392eR5oP86jtM1B
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=secret
     logging:
         driver: none
 
