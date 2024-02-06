@@ -16,7 +16,7 @@ services:
     links:
       - mongo
     environment:
-      - MONGODB_URL=mongodb://admin:secret@mongo:27017
+      - MONGODB_URL=mongodb+srv://doadmin:0392eR5oP86jtM1B@db-mongodb-nyc3-33591-340c1998.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-nyc3-33591
     env_file:
       - .env
 
@@ -31,7 +31,7 @@ services:
       - "5000:5000"
     environment:
       - PORT=5000
-      - MONGODB_URL=mongodb://admin:secret@mongo:27017
+      - MONGODB_URL=mongodb+srv://doadmin:0392eR5oP86jtM1B@db-mongodb-nyc3-33591-340c1998.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-nyc3-33591
       - SEED_LOCALHOST_CAMPAIGN=true
       - DEBUG_CRM_SIGNUP=true
     env_file:
@@ -45,7 +45,7 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=secret
+      - MONGO_INITDB_ROOT_USERNAME=doadmin
+      - MONGO_INITDB_ROOT_PASSWORD=0392eR5oP86jtM1B
     logging:
         driver: none
