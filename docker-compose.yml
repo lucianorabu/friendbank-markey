@@ -16,7 +16,7 @@ services:
     links:
       - mongo
     environment:
-      - MONGODB_URL=mongodb://admin:secret@mongo:27017
+      - MONGODB_URL=mongodb+srv://lucianorabu:hLJkLwY8CrXpPtRc@cluster0.yzeergf.mongodb.net/?retryWrites=true&w=majority
     env_file:
       - .env
 
@@ -31,7 +31,7 @@ services:
       - "5665:5665"
     environment:
       - PORT=5665
-      - MONGODB_URL=mongodb://admin:secret@mongo:27017
+      - MONGODB_URL=mongodb+srv://lucianorabu:hLJkLwY8CrXpPtRc@cluster0.yzeergf.mongodb.net/?retryWrites=true&w=majority
       - SEED_LOCALHOST_CAMPAIGN=true
       - DEBUG_CRM_SIGNUP=true
     env_file:
@@ -42,10 +42,8 @@ services:
 
   mongo:
     image: mongo:4
-    ports:
-      - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=secret
+      - MONGO_INITDB_ROOT_USERNAME=lucianorabu
+      - MONGO_INITDB_ROOT_PASSWORD=hLJkLwY8CrXpPtRc
     logging:
         driver: none
