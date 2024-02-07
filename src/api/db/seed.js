@@ -306,7 +306,7 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 
   const campaigns = db.collection('campaigns');
   const campaignResult = await campaigns.insertOne({
-    domains: ['localhost:5665'],
+    domains: ['localhost:5665', 'https://fbank-565310ad478d.herokuapp.com'],
     name: 'Friendbank Dev',
     copy,
     config,
@@ -320,9 +320,9 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 
   const userInsertResult = await users.insertOne({
     campaign: campaignId,
-    email: 'admin@friendbank.us',
+    email: 'lucianorab.u@gmail.com',
     password: hashedPassword,
-    firstName: 'Joe',
+    firstName: 'Lucho',
     zip: '00000',
     emailFrequency: TRANSACTIONAL_EMAIL,
     createdAt: Date.now(),
