@@ -406,7 +406,8 @@ app.get('*', async function (req, res) {
 
     console.log(MONGODB_URL)
 
-    const client = await MongoClient.connect(MONGODB_URL, {
+    const parsedUri = encodeURI(MONGODB_URL);
+    const client = await MongoClient.connect(parsedUri, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
@@ -423,6 +424,7 @@ app.get('*', async function (req, res) {
   } catch (error) {
     console.log('Failed to connect to MongoDB');
     console.error(error);
+    console.log(MONGODB_URL)
     process.exit(1);
   }
 
