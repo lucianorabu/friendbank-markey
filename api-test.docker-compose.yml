@@ -15,7 +15,7 @@ services:
     env_file:
       - .env
     environment:
-      - API_URL=http://api:5000
+      - API_URL=http://api:5665
       - MONGODB_URL=mongodb://admin:secret@mongo:27017
     volumes:
       - type: volume
@@ -35,7 +35,7 @@ services:
     env_file:
       - .env
     environment:
-      - PORT=5000
+      - PORT=5665
       - MONGODB_URL=mongodb://admin:secret@mongo:27017
       - DEBUG_CRM_SIGNUP=true
       - MAIL_DEBUG=true

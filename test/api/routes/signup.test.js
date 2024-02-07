@@ -254,7 +254,7 @@ describe('signup api route v1', function() {
 
     await campaigns.updateOne(
       { _id: standard.campaign._id },
-      { '$set': { domains: ['api:5000', 'support.edmarkey.com'] } },
+      { '$set': { domains: ['api:5665', 'support.edmarkey.com'] } },
     );
 
     await pages.insertOne({

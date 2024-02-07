@@ -19,7 +19,7 @@ $ cp .env.example .env
 $ make start
 ```
 
-App is available at `localhost:5000`.
+App is available at `localhost:5665`.
 
 You can also run `make unit-test-api` to run the API test suite.
 

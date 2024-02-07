@@ -28,9 +28,9 @@ services:
     links:
       - mongo
     ports:
-      - "5000:5000"
+      - "5665:5665"
     environment:
-      - PORT=5000
+      - PORT=5665
       - MONGODB_URL=mongodb://admin:secret@mongo:27017
       - SEED_LOCALHOST_CAMPAIGN=true
       - DEBUG_CRM_SIGNUP=true

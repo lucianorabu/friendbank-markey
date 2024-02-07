@@ -38,7 +38,7 @@ describe('forgotPassword api route v1', function() {
     const tokens = await tokensCollection.find().sort({ expiresAt: 1 }).toArray();
     const mostRecentToken = tokens[0];
 
-    assert.equal(message.dynamic_template_data.resetUrl, `https://api:5000/friendbank/reset-password?token=${mostRecentToken._id}`)
+    assert.equal(message.dynamic_template_data.resetUrl, `https://api:5665/friendbank/reset-password?token=${mostRecentToken._id}`)
     assert.equal(mostRecentToken.user, standard.user._id.toString());
   });
 
