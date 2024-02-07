@@ -19,7 +19,6 @@
     ]
   },
   "dependencies": {
-    "@2toad/profanity": "^1.1.0",
     "@babel/runtime": "^7.9.6",
     "@loadable/component": "^5.13.1",
     "@loadable/server": "^5.13.1",
