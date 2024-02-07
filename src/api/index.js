@@ -403,9 +403,6 @@ app.get('*', async function (req, res) {
 
 (async function() {
   try {
-
-    console.log(MONGODB_URL)
-
     const client = await MongoClient.connect(MONGODB_URL, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
@@ -416,8 +413,6 @@ app.get('*', async function (req, res) {
     const result = await setupDb(db);
 
     if (result instanceof Error) {
-      console.log("result was error")
-      console.log(result)
       throw result;
     }
   } catch (error) {
