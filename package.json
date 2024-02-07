@@ -32,7 +32,7 @@
     "file-saver": "^2.0.2",
     "marked": "^1.0.0",
     "mime-types": "^2.1.27",
-    "mongodb": "^3.5.6",
+    "mongodb": "^3.7.4",
     "ms": "^2.1.2",
     "node-fetch": "^2.6.0",
     "phone": "^2.4.10",
