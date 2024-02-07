@@ -1,11 +1,12 @@
 const xss = require('xss');
 const phoneValidation = require('phone');
-const profanity = require('@2toad/profanity').profanity;
+//const profanity = require('@2toad/profanity').profanity;
 const normalizePageCode = require('../../shared/normalizePageCode');
 const fieldValidations = require('../../shared/fieldValidations');
 
 function profanityCheck(value) {
-  return profanity.exists(value) ? 'validations.profanity' : false;
+  //return profanity.exists(value) ? 'validations.profanity' : false;
+  return false;
 }
 
 function normalizeName(value) {
