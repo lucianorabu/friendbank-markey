@@ -1,13 +1,14 @@
 const theme = {
   colors: {
     chrome: '#f8fcff',
-    grey: '#c2c2c2',
+    grey: '#ececec',
     black: '#111111',
+    newBlack: '#222222',
     white: '#FFFFFF',
-    blue: '#005196',
+    yellow: '#fcdb34',
     darkBlue: '#00284a',
     green: '#009645',
-    red: '#FF3333',
+    hotPink: '#eb0063',
   },
   fonts: {
     mainFamily: 'Museo Sans',

@@ -40,7 +40,7 @@ const Link = styled.a`
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: normal;
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
   text-decoration: none;
   cursor: pointer;
 

@@ -13,7 +13,7 @@ const MapLink = styled.a`
   border: none;
   background: none;
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 
   margin-top: 16px;
 

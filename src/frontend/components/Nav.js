@@ -41,6 +41,7 @@ const NavContainer = styled.div`
 
 const Logo = styled.a`
   margin-left: 8px;
+  margin-top: -14px;
 
   img {
     width: 50px;
@@ -81,7 +82,7 @@ const NavItem = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme }) => theme.colors.newBlack};
     text-decoration: underline;
   }
 `;
@@ -111,7 +112,7 @@ export const Redirect = styled.a`
   display: block;
   width: ${({ disableNavDonate }) => disableNavDonate ? '100%' : '66.66%'};
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.blue};
+  background-color: ${({ theme }) => theme.colors.newBlack};
   font-family: ${({ theme }) => theme.fonts.headerFamily};
   font-weight: bold;
   font-size: 12px;
@@ -135,7 +136,7 @@ export const DonateRedirect = styled.a`
   display: block;
   width: 33.33%;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.red};
+  background-color: ${({ theme }) => theme.colors.hotPink};
   font-family: ${({ theme }) => theme.fonts.headerFamily};
   font-weight: bold;
   font-size: 12px;
@@ -199,11 +200,11 @@ export default function Nav(props) {
       </RedirectRow>
       <NavContainer>
         <Logo href={makeLocaleLink(HOMEPAGE_ROUTE)}>
-          <img src="https://ed-markey-supporter-photos.s3.amazonaws.com/logo.png" alt={getCopy('nav.logoAlt')} />
+          <img src="https://jamiedriscoll.co.uk/wp/wp-content/uploads/favicon.png" alt={getCopy('nav.logoAlt')} />
         </Logo>
         <NavItemsContainer>
           <LeftLink href={languageLink}>
-            {getCopy('nav.language')}
+            {/* {getCopy('nav.language')} */}
           </LeftLink>
           <RightNavItemsRow>
             {role === STAFF_ROLE && (

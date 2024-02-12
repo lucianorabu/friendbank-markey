@@ -422,7 +422,7 @@ app.get('*', async function (req, res) {
       throw result;
     }
   } catch (error) {
-    console.log('Failed to connect to MongoDB');
+    console.log('Failed to connect to MongoDB !!!');
     console.error(error);
     console.log(MONGODB_URL)
     process.exit(1);

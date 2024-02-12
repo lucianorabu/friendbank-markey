@@ -113,7 +113,7 @@ const CardHeader = styled.h1`
   line-height: 1.1;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.blue};
+  background-color: ${({ theme }) => theme.colors.newBlack};
   padding: 16px 24px;
 `;
 
@@ -153,11 +153,11 @@ const LinkButton = styled.button`
 `;
 
 const EditPageButton = styled(LinkButton)`
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 `;
 
 const LogoutButton = styled(LinkButton)`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.hotPink};
 `;
 
 const SignupsHeaderRow = styled.div`
@@ -228,7 +228,7 @@ const ShareButtonIcon = styled.a`
   border: none;
 
   i {
-    color: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme }) => theme.colors.newBlack};
     font-size: 24px;
   }
 

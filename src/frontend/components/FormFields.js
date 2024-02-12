@@ -7,7 +7,7 @@ export const BaseSingleLineTextInput = styled.input`
   width: 100%;
   padding: 8px;
   background-color: ${({ theme }) => theme.colors.white};
-  border: 2px solid ${({ theme }) => theme.colors.blue};
+  border: 2px solid ${({ theme }) => theme.colors.newBlack};
 
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: normal;
@@ -51,7 +51,7 @@ export const HelpText = styled(Label)`
   `}
 
   ${({ theme, isValidation }) => isValidation && css`
-    color: ${({ theme }) => theme.colors.red};
+    color: ${({ theme }) => theme.colors.hotPink};
     margin-left: 4px;
   `}
 `;
@@ -131,7 +131,7 @@ export const BaseMultiLineTextInput = styled.textarea`
   width: 100%;
   padding: 8px;
   background-color: ${({ theme }) => theme.colors.white};
-  border: 2px solid ${({ theme }) => theme.colors.blue};
+  border: 2px solid ${({ theme }) => theme.colors.newBlack};
 
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: normal;
@@ -208,12 +208,12 @@ export const RadioElementToggle = styled.span`
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.colors.blue};
+  border: 2px solid ${({ theme }) => theme.colors.newBlack};
   cursor: pointer;
   position: relative;
 
   ${({ isChecked }) => isChecked && css`
-    border: 2px solid ${({ theme }) => theme.colors.blue};
+    border: 2px solid ${({ theme }) => theme.colors.newBlack};
 
     &:before {
       content: '';
@@ -222,7 +222,7 @@ export const RadioElementToggle = styled.span`
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: ${({ theme }) => theme.colors.blue};
+      background: ${({ theme }) => theme.colors.newBlack};
     }
   `}
 
@@ -235,7 +235,7 @@ export const RadioElementToggle = styled.span`
       height: 32px;
       border-radius: 50%;
       opacity: 0.25;
-      background: ${({ theme }) => theme.colors.blue};
+      background: ${({ theme }) => theme.colors.newBlack};
     }
   `}
 `;
@@ -321,8 +321,8 @@ export const CheckboxElementToggle = styled(RadioElementToggle)`
     border-radius: 0;
     width: 8px;
     background: none;
-    border-bottom: 4px solid ${({ theme }) => theme.colors.blue};
-    border-right: 4px solid ${({ theme }) => theme.colors.blue};
+    border-bottom: 4px solid ${({ theme }) => theme.colors.newBlack};
+    border-right: 4px solid ${({ theme }) => theme.colors.newBlack};
     transform: rotate(45deg);
     top: 0px;
     left: 6px;
@@ -418,7 +418,7 @@ const CodeInputFieldWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 2px;
-  background: ${({ theme }) => theme.colors.blue};
+  background: ${({ theme }) => theme.colors.newBlack};
   width: 100%;
 
   ${BaseSingleLineTextInput} {
@@ -457,7 +457,7 @@ const CodeInputVerification = styled.span`
   `}
 
   ${({ isVerificationNotOk }) => isVerificationNotOk && css`
-    color: ${({ theme }) => theme.colors.red};
+    color: ${({ theme }) => theme.colors.hotPink};
     font-weight: bold;
   `}
 `;
@@ -537,7 +537,7 @@ export function CodeInputField(props) {
       {help && <HelpText as="p">{help}</HelpText>}
       <CodeInputFieldWrapper>
         <DomainLabel>
-          support.edmarkey.com/
+          support.gndrising.org/
         </DomainLabel>
         <BaseSingleLineTextInput
           {...rest}
@@ -599,11 +599,11 @@ export const GalleryItemMedia = styled.div`
   height: 100%;
 
   ${({ isChecked }) => isChecked && css`
-    outline: 4px solid ${({ theme }) => theme.colors.blue};
+    outline: 4px solid ${({ theme }) => theme.colors.newBlack};
   `}
 
   ${({ isFocused }) => isFocused && css`
-    outline: 4px solid ${({ theme }) => theme.colors.red};
+    outline: 4px solid ${({ theme }) => theme.colors.hotPink};
   `}
 `;
 
@@ -724,7 +724,7 @@ const MediaUploadStatus = styled.span`
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-size: 12px;
   font-weight: normal;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 
   ${({ hasUploaded }) => hasUploaded && css`
     color: ${({ theme }) => theme.colors.green};

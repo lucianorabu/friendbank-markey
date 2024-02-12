@@ -46,7 +46,7 @@ const ResultKey = styled.p`
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: bold;
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 
   margin-right: 8px;
 `;

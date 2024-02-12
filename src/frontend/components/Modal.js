@@ -26,7 +26,7 @@ const ModalContainer = styled.div`
   max-width: 800px;
   max-height: 100vh;
   overflow-y: scroll;
-  background-color: ${({ theme }) => theme.colors.blue};
+  background-color: ${({ theme }) => theme.colors.newBlack};
   padding: 24px;
 
   ${WhiteBlueButton} {
@@ -73,7 +73,7 @@ const ModalCopyContainer = styled.div`
     cursor: pointer;
 
     &:hover {
-      color: ${({ theme }) => theme.colors.red};
+      color: ${({ theme }) => theme.colors.hotPink};
     }
   }
 `;

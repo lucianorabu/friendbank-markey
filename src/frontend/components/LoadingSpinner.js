@@ -32,7 +32,7 @@ const SpinnerStyles = createGlobalStyle`
     display: block;
     width: 25%;
     height: 25%;
-    background-color: ${({ theme }) => theme.colors.blue};
+    background-color: ${({ theme }) => theme.colors.newBlack};
     border-radius: 100%;
     animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
   }

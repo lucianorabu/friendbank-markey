@@ -106,24 +106,24 @@ module.exports = ({ db }) => {
           const facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${shareLink}&quote=${encodeURIComponent(pageMatch.title)}`;
           const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${pageMatch.title}\n${shareLink}`)}`;
 
-          const mailResult = await sendMail(
-            pageAuthor.email,
-            process.env.MAIL_SIGNUP_ID,
-            {
-              authorFirstName: pageAuthor.firstName,
-              signupFirstName: signup.firstName,
-              signupLastName: signup.lastName,
-              shareCode: pageMatch.code,
-              campaignName: campaign.name,
-              facebookLink,
-              twitterLink,
-              domain,
-            },
-          );
+          // const mailResult = await sendMail(
+          //   pageAuthor.email,
+          //   process.env.MAIL_SIGNUP_ID,
+          //   {
+          //     authorFirstName: pageAuthor.firstName,
+          //     signupFirstName: signup.firstName,
+          //     signupLastName: signup.lastName,
+          //     shareCode: pageMatch.code,
+          //     campaignName: campaign.name,
+          //     facebookLink,
+          //     twitterLink,
+          //     domain,
+          //   },
+          // );
 
-          if (mailResult instanceof Error) {
-            throw mailResult;
-          }
+          // if (mailResult instanceof Error) {
+          //   throw mailResult;
+          // }
         }
       }
 

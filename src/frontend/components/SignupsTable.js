@@ -57,7 +57,7 @@ const HeaderTitle = styled.h1`
   font-size: 28px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
   margin-bottom: 12px;
 `;
 
@@ -78,7 +78,7 @@ const HeaderButton = styled.button`
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
   cursor: pointer;
   padding: 0;
   width: fit-content;
@@ -163,7 +163,7 @@ const TableColumnName = styled.p`
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: normal;
   font-size: 12px;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 `;
 
 const TableColumnValue = styled.p`
@@ -177,7 +177,7 @@ const TableColumnValueLink = styled(TableColumnValue)`
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: normal;
   font-size: 14px;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
   text-decoration: underline;
 `;
 
@@ -193,11 +193,11 @@ const TableButton = styled.button`
   user-select: none;
   padding: 8px 16px;
   width: fit-content;
-  background-color: ${({ theme }) => theme.colors.blue};
-  border: 2px solid ${({ theme }) => theme.colors.blue};
+  background-color: ${({ theme }) => theme.colors.newBlack};
+  border: 2px solid ${({ theme }) => theme.colors.newBlack};
 
   &:hover {
-    color: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme }) => theme.colors.newBlack};
     background-color: ${({ theme }) => theme.colors.white};;
   }
 `;

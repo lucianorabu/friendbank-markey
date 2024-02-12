@@ -16,7 +16,7 @@ const { ENGLISH, SPANISH } = require('../src/shared/lang');
 
   const campaigns = db.collection('campaigns');
 
-  const markeyCampaign = await campaigns.findOne({ domains: 'support.edmarkey.com' });
+  const markeyCampaign = await campaigns.findOne({ domains: 'support.gndrising.org' });
 
   const copy = JSON.stringify({
     ...JSON.parse(markeyCampaign.copy),
@@ -37,7 +37,7 @@ const { ENGLISH, SPANISH } = require('../src/shared/lang');
   });
 
   await campaigns.updateOne(
-    { domains: 'support.edmarkey.com' },
+    { domains: 'support.gndrising.org' },
     {
       '$set': {
         copy,

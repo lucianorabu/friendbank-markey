@@ -254,7 +254,7 @@ describe('signup api route v1', function() {
 
     await campaigns.updateOne(
       { _id: standard.campaign._id },
-      { '$set': { domains: ['api:5665', 'support.edmarkey.com'] } },
+      { '$set': { domains: ['api:5665', 'support.gndrising.org'] } },
     );
 
     await pages.insertOne({
@@ -285,7 +285,7 @@ describe('signup api route v1', function() {
     assert.equal(message.dynamic_template_data.signupFirstName, 'First');
     assert.equal(message.dynamic_template_data.signupLastName, 'Last');
     assert.equal(message.dynamic_template_data.campaignName, standard.campaign.name);
-    assert.equal(message.dynamic_template_data.domain, 'support.edmarkey.com');
+    assert.equal(message.dynamic_template_data.domain, 'support.gndrising.org');
   });
 
   it('should create a signup without all fields', async function() {

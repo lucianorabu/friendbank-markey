@@ -102,7 +102,7 @@ const FormSubmitButton = styled(RedButton)`
       margin-left: -10px;
       border-radius: 50%;
       border: 2px solid ${({ theme }) => theme.colors.white};
-      border-top-color: ${({ theme }) => theme.colors.red};
+      border-top-color: ${({ theme }) => theme.colors.hotPink};
       animation: ${spinnerKeyframes} .6s linear infinite;
     }
   }
@@ -138,7 +138,7 @@ const FormNavigationRow = styled.div`
 `;
 
 const FormError = styled(HelpText)`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.hotPink};
   margin-top: 12px;
 `;
 

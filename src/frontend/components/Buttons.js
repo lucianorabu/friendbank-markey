@@ -19,20 +19,20 @@ export const BaseButton = styled.button`
 `;
 
 export const RedButton = styled(BaseButton)`
-  border: 2px solid ${({ theme }) => theme.colors.red};
-  background-color: ${({ theme }) => theme.colors.red};
+  border: 2px solid ${({ theme }) => theme.colors.hotPink};
+  background-color: ${({ theme }) => theme.colors.hotPink};
   color: ${({ theme }) => theme.colors.white};
 
   &:hover {
     background-color: transparent;
-    color: ${({ theme }) => theme.colors.red};
+    color: ${({ theme }) => theme.colors.hotPink};
   }
 `;
 
 export const WhiteBlueButton = styled(BaseButton)`
   border: 2px solid ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.white};
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 
   &:hover {
     background-color: transparent;

@@ -71,3 +71,17 @@ src/frontend/components/Nav.js
 # Images, select options, web copy
 src/api/db/seed.js
 ```
+
+
+## Problems
+
+Deployin Docker on Heroku
+https://www.youtube.com/watch?v=4axmcEZTE7M&ab_channel=Sparkbox
+
+Set a MONGODB_URL config var
+Now that we've properly formed our connection string, it's time to store it in a Heroku config variable. Let's set our connection string to a config var called MONGODB_URL:
+
+heroku config:set MONGODB_URL="mongodb+srv://yourUsername:yourPassword@yourClusterName.n9z04.mongodb.net/sample_mflix?retryWrites=true&w=majority"
+
+https://www.mongodb.com/developer/products/atlas/use-atlas-on-heroku/
+

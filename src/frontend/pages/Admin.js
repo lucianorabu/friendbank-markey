@@ -34,7 +34,7 @@ const AdminNav = styled.div`
   width: 100%;
   padding-bottom: 24px;
   margin-bottom: 24px;
-  ${'' /* border-bottom: 2px solid ${({ theme }) => theme.colors.blue}; */}
+  ${'' /* border-bottom: 2px solid ${({ theme }) => theme.colors.newBlack}; */}
 
   min-height: 100px;
 
@@ -45,7 +45,7 @@ const AdminNav = styled.div`
     margin-bottom: 0;
     padding-right: 24px;
     margin-right: 24px;
-    ${'' /* border-right: 2px solid ${({ theme }) => theme.colors.blue}; */}
+    ${'' /* border-right: 2px solid ${({ theme }) => theme.colors.newBlack}; */}
     border-bottom: none;
   }
 `;
@@ -74,10 +74,10 @@ const NavItem = styled.button`
   }
 
   ${({ highlighted }) => highlighted && css`
-    color: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme }) => theme.colors.newBlack};
 
     &:hover {
-      color: ${({ theme }) => theme.colors.blue};
+      color: ${({ theme }) => theme.colors.newBlack};
       text-decoration: none;
     }
   `}

@@ -18,8 +18,8 @@ const Disclaimer = styled.span`
   font-family: ${({ theme }) => theme.fonts.mainFamily};
   font-weight: normal;
   font-size: 12px;
-  color: ${({ theme }) => theme.colors.blue};
-  border: 2px solid ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
+  border: 2px solid ${({ theme }) => theme.colors.newBlack};
 
   margin-bottom: 12px;
 `;
@@ -35,7 +35,7 @@ const PrivacyPolicyLink = styled.a`
   border: none;
   background: none;
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
 
   &:hover {
     color: ${({ theme }) => theme.colors.black};

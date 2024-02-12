@@ -30,7 +30,7 @@ const NotAuthorizedBanner = styled.p`
   width: 100%;
   max-width: 400px;
   padding: 4px;
-  background-color: ${({ theme }) => theme.colors.red};
+  background-color: ${({ theme }) => theme.colors.hotPink};
   color: ${({ theme }) => theme.colors.white};
 `;
 

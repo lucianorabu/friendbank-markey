@@ -215,7 +215,7 @@ const ToolbarButton = styled.button`
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
   cursor: pointer;
   padding: 0;
   width: fit-content;

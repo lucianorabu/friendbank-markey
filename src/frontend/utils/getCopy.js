@@ -35,7 +35,7 @@ export const copy = {
     [SPANISH]: 'Título',
   },
   'formLabels.subtitle': {
-    [ENGLISH]: 'Share why you\'re #StickingWithEd',
+    [ENGLISH]: 'Share why you\'re #VotingForJamie',
     [SPANISH]: 'Comparte por qué estás #ConEd',
   },
   'formLabels.background': {
@@ -51,7 +51,7 @@ export const copy = {
     [SPANISH]: 'Apellido',
   },
   'formLabels.zip': {
-    [ENGLISH]: 'Zip',
+    [ENGLISH]: 'Postcode',
     [SPANISH]: 'Código postal',
   },
   'formLabels.phone': {
@@ -101,7 +101,7 @@ export const copy = {
     [SPANISH]: 'Debe ser menos de 50 caracteres.',
   },
   'validations.zipFormat': {
-    [ENGLISH]: 'Invalid zip',
+    [ENGLISH]: 'Invalid postcode',
     [SPANISH]: 'Código postal inválido',
   },
   'validations.phoneFormat': {

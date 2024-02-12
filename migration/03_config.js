@@ -281,7 +281,7 @@ const { ENGLISH, SPANISH } = require('../src/shared/lang');
 
   const campaigns = db.collection('campaigns');
   await campaigns.updateOne(
-    { domains: 'support.edmarkey.com' },
+    { domains: 'support.gndrising.org' },
     {
       '$set': {
         copy,

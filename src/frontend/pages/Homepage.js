@@ -237,14 +237,14 @@ export default function Homepage(props) {
     },
   ];
 
-  if (role === STAFF_ROLE) {
-    steps[1].fields.push({
-      fieldId: 'customBackground',
-      fieldType: MEDIA_UPLOAD,
-      label: getCopy('formLabels.customBackground'),
-      set: 'background',
-    });
-  }
+  // if (role === STAFF_ROLE) {
+  //   steps[1].fields.push({
+  //     fieldId: 'customBackground',
+  //     fieldType: MEDIA_UPLOAD,
+  //     label: getCopy('formLabels.customBackground'),
+  //     set: 'background',
+  //   });
+  // }
 
   const authenticatedSteps = [
     {

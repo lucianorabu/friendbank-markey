@@ -13,7 +13,7 @@ export const BaseTitle = styled.h1`
 `;
 
 export const DefaultTitle = styled(BaseTitle)`
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.newBlack};
   margin-bottom: 24px;
 `;
 

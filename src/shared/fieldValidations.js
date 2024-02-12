@@ -17,13 +17,13 @@ function validateZip(value) {
     return 'validations.required';
   }
 
-  if (value.length !== 5) {
+  if (value.length < 6) {
     return 'validations.zipFormat';
   }
 
-  if (!/^\d+$/.test(value)) {
-    return 'validations.zipFormat';
-  }
+  // if (!/^\d+$/.test(value)) {
+  //   return 'validations.zipFormat';
+  // }
 
   return false;
 }
@@ -33,13 +33,13 @@ function validateZipNotRequired(value) {
     return false;
   }
 
-  if (value.length !== 5) {
+  if (value.length < 6) {
     return 'validations.zipFormat';
   }
 
-  if (!/^\d+$/.test(value)) {
-    return 'validations.zipFormat';
-  }
+  // if (!/^\d+$/.test(value)) {
+  //   return 'validations.zipFormat';
+  // }
 
   return false;
 }
