@@ -59,7 +59,8 @@ export default function Signup() {
 
   function hasVoteStep(formValues) {
     const { supportLevel } = formValues;
-    return getCopy('idQuestions.support.options').indexOf(supportLevel) <= 1;
+    return getCopy('idQuestions.support.options').indexOf(supportLevel) < 0;
+    // return getCopy('idQuestions.support.options').indexOf(supportLevel) <= 1;
   }
 
   async function onStepSubmit(formValues) {

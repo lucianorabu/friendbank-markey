@@ -77,7 +77,6 @@ const Panel = styled.div`
   padding: 12px 24px;
   background-color: ${({ theme }) => theme.colors.white};
   cursor: auto;
-  overflow-y: scroll;
   ${swipeStyle(swipeOut, swipeIn)}
 
   @media ${({ theme }) => theme.media.tablet} {

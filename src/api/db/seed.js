@@ -179,7 +179,7 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
   const campaigns = db.collection('campaigns');
   const campaignResult = await campaigns.insertOne({
     domains: ['localhost:5665'],
-    name: 'Friendbank Dev',
+    name: 'Team Jamie',
     copy,
     config,
   });
@@ -187,12 +187,12 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
   const campaign = campaignResult.ops[0];
   const campaignId = campaign._id.toString();
 
-  const hashedPassword = await passwordHash('password');
+  const hashedPassword = await passwordHash('mSecret-2008');
   const users = db.collection('users');
 
   const userInsertResult = await users.insertOne({
     campaign: campaignId,
-    email: 'admin@friendbank.us',
+    email: 'support@jamiedriscoll.org',
     password: hashedPassword,
     firstName: 'Joe',
     zip: '00000',

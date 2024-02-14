@@ -29,7 +29,6 @@ const ContentPanel = styled.main`
   @media ${({ theme }) => theme.media.desktop} {
     width: 40%;
     height: 100%;
-    overflow-y: scroll;
     overflow-x: visible;
     justify-content: center;
   }
@@ -45,7 +44,6 @@ const ContentPanelContainer = styled.div`
     width: 100%;
     max-width: 500px;
     padding: 32px 24px;
-    overflow-y: scroll;
   }
 `;
 

@@ -599,11 +599,11 @@ export const GalleryItemMedia = styled.div`
   height: 100%;
 
   ${({ isChecked }) => isChecked && css`
-    outline: 4px solid ${({ theme }) => theme.colors.newBlack};
+    outline: 4px solid ${({ theme }) => theme.colors.hotPink};
   `}
 
   ${({ isFocused }) => isFocused && css`
-    outline: 4px solid ${({ theme }) => theme.colors.hotPink};
+    outline: 4px solid ${({ theme }) => theme.colors.darkBlue};
   `}
 `;
 

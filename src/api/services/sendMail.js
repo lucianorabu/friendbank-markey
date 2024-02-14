@@ -15,6 +15,7 @@ async function sendMail(
 ) {
   try {
     mail.setApiKey(SENDGRID_API_KEY);
+    console.log('Email key: '+ SENDGRID_API_KEY);
 
     const message = {
       to,
@@ -26,19 +27,52 @@ async function sendMail(
       dynamic_template_data: templateData,
     };
 
-    if (MAIL_DEBUG) {
-      message.mailSettings = {
-        sandboxMode: {
-          enable: true,
-        },
-      };
+    console.log(message)
 
-      await _writeServiceOutput('mail', message);
-    }
+    // if (MAIL_DEBUG) {
+    //   message.mailSettings = {
+    //     sandboxMode: {
+    //       enable: true,
+    //     },
+    //   };
 
-    await mail.send(message);
+    //   await _writeServiceOutput('mail', message);
+    // }
+
+    mail.send(message).then((response) => {
+      console.log('sent!')
+      // console.log(response[0].statusCode)
+      // console.log(response[0].headers)
+    })
+    .catch((error) => {
+      error.message = JSON.stringify(error);
+      console.log(error)
+      return error;
+    })
+
+  //   const msg = {
+  //     to: 'lucho.rabu@gmail.com', // Change to your recipient
+  //     from: { name: 'Team Jamie', email: 'support@jamiedriscoll.org' },
+  //     subject: 'New test on this email',
+  //     text: 'and easy to do anywhere, even with Node.js',
+  //     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+  //   }
+
+  //   mail
+  //   .send(msg)
+  //   .then((response) => {
+  //     console.log('sent!')
+  //     console.log(response[0].statusCode)
+  //     console.log(response[0].headers)
+  //   })
+  //   .catch((error) => {
+  //     console.log('errorrrr !')
+  //     console.error(error)
+  //   })
+
   } catch (error) {
     error.message = JSON.stringify(error);
+    console.log(error)
     return error;
   }
 }

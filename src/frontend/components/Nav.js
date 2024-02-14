@@ -41,11 +41,9 @@ const NavContainer = styled.div`
 
 const Logo = styled.a`
   margin-left: 8px;
-  margin-top: -14px;
 
   img {
-    width: 50px;
-    margin-bottom: 10px;
+    margin: 16px 0;
   }
 
   @media ${({ theme }) => theme.media.tablet} {
@@ -200,7 +198,7 @@ export default function Nav(props) {
       </RedirectRow>
       <NavContainer>
         <Logo href={makeLocaleLink(HOMEPAGE_ROUTE)}>
-          <img src="https://jamiedriscoll.co.uk/wp/wp-content/uploads/favicon.png" alt={getCopy('nav.logoAlt')} />
+          <img src="https://jamiedriscoll.co.uk/wp/wp-content/themes/jamie-driscoll/assets/images/logo-jamie-driscoll.svg" alt={getCopy('nav.logoAlt')} />
         </Logo>
         <NavItemsContainer>
           <LeftLink href={languageLink}>

@@ -25,7 +25,6 @@ const ModalContainer = styled.div`
   width: 100%;
   max-width: 800px;
   max-height: 100vh;
-  overflow-y: scroll;
   background-color: ${({ theme }) => theme.colors.newBlack};
   padding: 24px;
 

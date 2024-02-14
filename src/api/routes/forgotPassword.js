@@ -7,6 +7,7 @@ const apiErrorHandler = require('../utils/apiErrorHandler');
 
 module.exports = ({ db }) => {
   async function forgotPassword(req, res) {
+    
     try {
       const {
         campaign,
@@ -27,6 +28,7 @@ module.exports = ({ db }) => {
       }
 
       const user = await findUser(db, validationResult.email, campaign);
+      // console.log(user.email);
 
       if (user instanceof Error) {
         throw user;
@@ -58,5 +60,32 @@ module.exports = ({ db }) => {
     }
   }
 
+  // async function forgotPassword2(req, res) {
+
+  // set api key
+
+  //   const msg = {
+  //     to: 'lucho@c6digital.io', // Change to your recipient
+  //     from: 'support@jamiedriscoll.org  ', // Change to your verified sender
+  //     subject: 'Sending with SendGrid is Fun',
+  //     text: 'and easy to do anywhere, even with Node.js',
+  //     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+  //   }
+
+  //   sgMail
+  //   .send(msg)
+  //   .then(() => {
+  //     console.log('Email sent')
+  //   })
+  //   .catch((error) => {
+  //     console.error(error)
+  //   })
+    
+
+  // }
+
   return forgotPassword;
+
+
+
 };

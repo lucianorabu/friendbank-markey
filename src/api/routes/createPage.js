@@ -3,6 +3,7 @@ const validateBackgroundField = require('../utils/validateBackgroundField');
 const validateAndNormalizeApiRequestFields = require('../utils/validateAndNormalizeApiRequestFields');
 const apiErrorHandler = require('../utils/apiErrorHandler');
 const transformPageResponse = require('../transformers/transformPageResponse');
+const sendMail = require('../services/sendMail');
 
 module.exports = ({ db }) => {
   async function createPage(req, res) {
@@ -75,6 +76,24 @@ module.exports = ({ db }) => {
 
       const pages = db.collection('pages');
       await pages.insertOne(page);
+
+      console.log(token.user.email);
+
+      const mailResult = await sendMail(
+        token.user.email,
+        process.env.MAIL_PAGE_CREATED_ID,
+        {
+          pageUrl: "https://support.jamiedriscoll.org/" + validationResult.code,
+          campaignName: campaign.name,
+          accountEmail: token.user.email,
+        },
+      );
+
+      console.log('page created email');
+
+      if (mailResult instanceof Error) {
+        throw mailResult;
+      }
 
       res.json({ page });
     } catch (error) {
