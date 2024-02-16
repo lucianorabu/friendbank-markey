@@ -404,9 +404,6 @@ app.get('*', async function (req, res) {
 (async function() {
   try {
 
-
-
-
   
     //db = client.db();
 
@@ -414,12 +411,9 @@ app.get('*', async function (req, res) {
 
     console.log(MONGODB_URL)
 
-    const uri = "mongodb+srv://lucho:test12343@cluster0.yzeergf.mongodb.net/?retryWrites=true&w=majority";
-
-    const parsedUri = encodeURI(uri)
 
     // Create a new MongoClient
-    const client = await MongoClient.connect("mongodb+srv://mongodb-conn-user:1JoFg7T2964w7U61@cluster0.yzeergf.mongodb.net/?retryWrites=true&w=majority", {
+    const client = await MongoClient.connect(MONGODB_URL, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
