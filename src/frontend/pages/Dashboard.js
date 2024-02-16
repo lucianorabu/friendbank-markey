@@ -88,7 +88,7 @@ const SignupsCard = styled(Card)`
 
 const SignupPagesCard = styled(Card)`
   height: fit-content;
-  max-height: 800px;
+  // max-height: 800px;
 
   @media ${({ theme }) => theme.media.tablet} {
     width: calc(50% - 24px);

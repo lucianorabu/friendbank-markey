@@ -10,26 +10,26 @@ const {
 
 module.exports = async function submitBsdForm(slug, fields) {
   try {
-    const url = `${BSD_API_BASE_URL}/page/sapi/${slug}`;
+    // const url = `${BSD_API_BASE_URL}/page/sapi/${slug}`;
 
-    const body = fieldUrlEncoder(fields);
+    // const body = fieldUrlEncoder(fields);
 
-    const options = {
-      method: 'post',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-      },
-      body,
-    };
+    // const options = {
+    //   method: 'post',
+    //   headers: {
+    //     'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+    //   },
+    //   body,
+    // };
 
-    if (DEBUG_CRM_SIGNUP) {
-      await _writeServiceOutput('bsd', { ...options, url });
-      return true;
-    }
+    // if (DEBUG_CRM_SIGNUP) {
+    //   await _writeServiceOutput('bsd', { ...options, url });
+    //   return true;
+    // }
 
-    const response = await fetch(url, options);
+    // const response = await fetch(url, options);
 
-    return response;
+    return true;
   } catch (error) {
     return error;
   }
