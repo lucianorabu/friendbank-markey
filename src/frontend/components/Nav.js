@@ -36,7 +36,7 @@ const NavContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
 
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.yellow};
 `;
 
 const Logo = styled.a`
