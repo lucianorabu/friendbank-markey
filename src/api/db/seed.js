@@ -7,6 +7,8 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 (async function() {
   console.log('Seeding database...');
 
+  console.log(process.env.MONGODB_URL);
+
   const client = await MongoClient.connect(process.env.MONGODB_URL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -205,24 +207,24 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 
   const adminUser = userInsertResult.ops[0];
 
-  // const signups = db.collection('signups');
-  // const signupSeed = new Array(50).fill({
-  //   email: `${Math.round(Math.random() * 10000)}@gmail.com`,
-  //   recruitedBy: adminUser._id.toString(),
-  //   campaign: campaign._id.toString(),
-  //   type: 'contact',
-  //   lastUpdatedAt: Date.now(),
-  //   firstName: 'First',
-  //   phone: '',
-  //   zip: '',
-  //   supportLevel: '',
-  //   volunteerLevel: '',
-  // }).map((signup, index) => ({
-  //   ...signup,
-  //   _id: new ObjectId(),
-  //   lastName: `${index}`,
-  //   note: `This is a note ${Math.random()}`,
-  // }));
+  const signups = db.collection('signups');
+  const signupSeed = new Array(50).fill({
+    email: `${Math.round(Math.random() * 10000)}@gmail.com`,
+    recruitedBy: adminUser._id.toString(),
+    campaign: campaign._id.toString(),
+    type: 'contact',
+    lastUpdatedAt: Date.now(),
+    firstName: 'First',
+    phone: '',
+    zip: '',
+    supportLevel: '',
+    volunteerLevel: '',
+  }).map((signup, index) => ({
+    ...signup,
+    _id: new ObjectId(),
+    lastName: `${index}`,
+    note: `This is a note ${Math.random()}`,
+  }));
 
   await signups.insertMany(signupSeed);
   process.exit(0);

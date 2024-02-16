@@ -404,23 +404,61 @@ app.get('*', async function (req, res) {
 (async function() {
   try {
 
+
+
+
+  
+    //db = client.db();
+
+
+
     console.log(MONGODB_URL)
 
-    const parsedUri = encodeURI(MONGODB_URL);
-    const client = await MongoClient.connect(parsedUri, {
+    const uri = "mongodb+srv://lucho:test12343@cluster0.yzeergf.mongodb.net/?retryWrites=true&w=majority";
+
+    const parsedUri = encodeURI(uri)
+
+    // Create a new MongoClient
+    const client = await MongoClient.connect("mongodb+srv://mongodb-conn-user:1JoFg7T2964w7U61@cluster0.yzeergf.mongodb.net/?retryWrites=true&w=majority", {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
 
+    console.log('trying to connect')
+    //await client.connect();
+    // Send a ping to confirm a successful connection
     db = client.db();
+    // await client.db("admin").command({ ping: 1 });
+    const cpa = db.collection('campaign');
 
-    const result = await setupDb(db);
 
-    if (result instanceof Error) {
-      console.log("result was error")
-      console.log(result)
-      throw result;
-    }
+    console.log(cpa)
+
+    // await db.dropDatabase();
+
+    // await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+
+
+
+
+
+
+    // const parsedUri = encodeURI(MONGODB_URL);
+    // const client = await MongoClient.connect(parsedUri, {
+    //   useUnifiedTopology: true,
+    //   useNewUrlParser: true,
+    // });
+
+    // db = client.db();
+
+    // const result = await setupDb(db);
+
+    // if (result instanceof Error) {
+    //   console.log("result was error")
+    //   console.log(result)
+    //   throw result;
+    // }
   } catch (error) {
     console.log('Failed to connect to MongoDB !!!');
     console.error(error);

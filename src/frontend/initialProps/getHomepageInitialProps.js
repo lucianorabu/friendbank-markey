@@ -3,6 +3,7 @@ export default async function getHomepageInitialProps({
   campaign,
 }) {
   try {
+    console.log(campaign);
     const config = JSON.parse(campaign.config);
 
     const mediaCollection = db.collection('media');
