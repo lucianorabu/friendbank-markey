@@ -18,5 +18,12 @@ export default function signupIdFields() {
       validator: validateRequired,
       options: getCopy('idQuestions.volunteer.options'),
     },
+    {
+      fieldId: 'voteStatus',
+      fieldType: 'RADIO_FIELD',
+      label: getCopy('idQuestions.voteStatus.label'),
+      validator: validateRequired,
+      options: getCopy('idQuestions.voteStatus.options'),
+    }
   ];
 }

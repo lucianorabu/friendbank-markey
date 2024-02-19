@@ -220,21 +220,21 @@ export default function Homepage(props) {
         ...signupIdFields()
       ],
     },
-    {
-      title: getCopy('voteStatus.label'),
-      subtitle: getCopy('voteStatus.subtitle'),
-      buttonCopy: getCopy('homepage.createButtonLabel'),
-      condition: hasVoteStep,
-      onStepSubmit: onSignup,
-      fields: [
-        {
-          fieldId: 'voteStatus',
-          fieldType: RADIO_FIELD,
-          label: getCopy('voteStatus.label'),
-          options: getCopy('voteStatus.options'),
-        },
-      ],
-    },
+    // {
+    //   title: getCopy('voteStatus.label'),
+    //   subtitle: getCopy('voteStatus.subtitle'),
+    //   buttonCopy: getCopy('homepage.createButtonLabel'),
+    //   condition: hasVoteStep,
+    //   onStepSubmit: onSignup,
+    //   fields: [
+    //     {
+    //       fieldId: 'voteStatus',
+    //       fieldType: RADIO_FIELD,
+    //       label: getCopy('voteStatus.label'),
+    //       options: getCopy('voteStatus.options'),
+    //     },
+    //   ],
+    // },
   ];
 
   // if (role === STAFF_ROLE) {

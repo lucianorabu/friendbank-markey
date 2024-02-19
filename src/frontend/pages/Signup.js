@@ -87,21 +87,21 @@ export default function Signup() {
       fields: [...signupIdFields()],
       onStepSubmit: onStepSubmit,
     },
-    {
-      title: getCopy('voteStatus.label'),
-      subtitle: getCopy('voteStatus.subtitle'),
-      buttonCopy: getCopy('signupPage.stepTwoButtonLabel'),
-      condition: hasVoteStep,
-      onStepSubmit: onStepSubmit,
-      fields: [
-        {
-          fieldId: 'voteStatus',
-          fieldType: RADIO_FIELD,
-          label: getCopy('voteStatus.label'),
-          options: getCopy('voteStatus.options'),
-        },
-      ],
-    },
+    // {
+    //   title: getCopy('voteStatus.label'),
+    //   subtitle: getCopy('voteStatus.subtitle'),
+    //   buttonCopy: getCopy('signupPage.stepTwoButtonLabel'),
+    //   condition: hasVoteStep,
+    //   onStepSubmit: onStepSubmit,
+    //   fields: [
+    //     {
+    //       fieldId: 'voteStatus',
+    //       fieldType: RADIO_FIELD,
+    //       label: getCopy('voteStatus.label'),
+    //       options: getCopy('voteStatus.options'),
+    //     },
+    //   ],
+    // },
   ];
 
   const [isModalOpen, setIsModalOpen] = React.useState(false);

@@ -66,6 +66,7 @@ const PanelBackdrop = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  overflow: scroll;
   ${swipeStyle(fadeOut, fadeIn)}
 `;
 
@@ -73,7 +74,7 @@ const Panel = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   padding: 12px 24px;
   background-color: ${({ theme }) => theme.colors.white};
   cursor: auto;
@@ -164,12 +165,12 @@ export default function SignupsTablePanel(props) {
   const signupFieldDump = [
     ...signupContactFields(),
     ...signupIdFields(),
-    {
-      fieldId: 'voteStatus',
-      fieldType: RADIO_FIELD,
-      label: getCopy('voteStatus.label'),
-      options: getCopy('voteStatus.options'),
-    },
+    // {
+    //   fieldId: 'voteStatus',
+    //   fieldType: RADIO_FIELD,
+    //   label: getCopy('voteStatus.label'),
+    //   options: getCopy('voteStatus.options'),
+    // },
   ];
 
   if (selectedSignup.ballotStatus) {

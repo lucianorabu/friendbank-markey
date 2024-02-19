@@ -77,12 +77,12 @@ export default function PhonebankForm() {
   const fields = [
     ...signupContactFields(),
     ...signupIdFields(),
-    {
-      fieldId: 'voteStatus',
-      fieldType: RADIO_FIELD,
-      label: getCopy('voteStatus.label'),
-      options: getCopy('voteStatus.options'),
-    },
+    // {
+    //   fieldId: 'voteStatus',
+    //   fieldType: RADIO_FIELD,
+    //   label: getCopy('voteStatus.label'),
+    //   options: getCopy('voteStatus.options'),
+    // },
     {
       fieldId: 'note',
       fieldType: MULTI_LINE_TEXT_INPUT,
