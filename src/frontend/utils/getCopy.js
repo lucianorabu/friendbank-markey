@@ -285,7 +285,7 @@ export const copy = {
     [SPANISH]: 'Añadido manualmente',
   },
   'dashboard.signupTableVoteStatus': {
-    [ENGLISH]: 'Vote Status',
+    [ENGLISH]: 'GND Optin',
   },
   'dashboard.totalSignups': {
     [ENGLISH]: 'Total signups:',
