@@ -246,7 +246,7 @@ export default function SignupsTablePanel(props) {
             fields: signupFields,
           }]}
         />
-        <DownBallotMapLink />
+        {/* <DownBallotMapLink /> */}
       </Panel>
     </PanelBackdrop>
   );

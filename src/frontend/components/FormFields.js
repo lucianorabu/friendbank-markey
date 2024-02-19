@@ -274,6 +274,9 @@ export function RadioField(props) {
     setFormValues((copy) => ({ ...copy, [fieldId]: option }));
   }
 
+
+  console.log('RadioField')
+
   return (
     <FormFieldColumn>
       <LabelRow>
@@ -374,6 +377,8 @@ export function CheckboxField(props) {
       }));
     }
   }
+
+  console.log('CheckboxField')
 
   return (
     <FormFieldColumn>
@@ -526,6 +531,9 @@ export function CodeInputField(props) {
   const isVerificationOk = !isCheckingCode && !!(suggestedValue || '').length;
   const isVerificationNotOk = !isCheckingCode && !(suggestedValue || '').length;
 
+
+  console.log('CodeInput Field')
+
   return (
     <FormFieldColumn isHalfWidth={isHalfWidth}>
       <LabelRow>
@@ -537,7 +545,7 @@ export function CodeInputField(props) {
       {help && <HelpText as="p">{help}</HelpText>}
       <CodeInputFieldWrapper>
         <DomainLabel>
-          support.gndrising.org/
+          support.jamiedriscoll.org/
         </DomainLabel>
         <BaseSingleLineTextInput
           {...rest}

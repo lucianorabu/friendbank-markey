@@ -8,8 +8,9 @@ import { DefaultTitle } from './Typography';
 const ModalBackground = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items: baseline;
+  overflow: scroll;
+  padding: 40px 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,8 +25,7 @@ const ModalContainer = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 800px;
-  max-height: 100vh;
-  background-color: ${({ theme }) => theme.colors.newBlack};
+  background-color: ${({ theme }) => theme.colors.deepPurple};
   padding: 24px;
 
   ${WhiteBlueButton} {

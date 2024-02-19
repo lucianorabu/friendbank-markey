@@ -42,7 +42,7 @@ export default function Homepage(props) {
 
   function hasVoteStep(formValues) {
     const { supportLevel } = formValues;
-    return getCopy('idQuestions.support.options').indexOf(supportLevel) <= 1;
+    return getCopy('idQuestions.support.options').indexOf(supportLevel) <= 0;
   }
 
   async function onUserSubmit(formValues) {

@@ -5,10 +5,11 @@ const theme = {
     black: '#111111',
     newBlack: '#222222',
     white: '#FFFFFF',
-    yellow: '#fcdb34',
+    yellow: '#fcdb35',
     darkBlue: '#00284a',
     green: '#009645',
     hotPink: '#eb0063',
+    deepPurple: '#583b8f'
   },
   fonts: {
     mainFamily: 'Museo Sans',

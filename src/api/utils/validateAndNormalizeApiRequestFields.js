@@ -85,7 +85,6 @@ module.exports = function validateAndNormalizeApiRequestFields(fields, customVal
     firstName: normalizeName,
     lastName: normalizeName,
     email: normalizeEmail,
-    phone: normalizePhone,
     title: normalizeName,
     subtitle: normalizeName,
     note: normalizeName,

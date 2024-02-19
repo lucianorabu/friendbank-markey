@@ -15,7 +15,6 @@ async function sendMail(
 ) {
   try {
     mail.setApiKey(SENDGRID_API_KEY);
-    console.log('Email key: '+ SENDGRID_API_KEY);
 
     const message = {
       to,

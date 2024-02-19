@@ -49,7 +49,7 @@ function validatePhone(value) {
     return 'validations.required';
   }
 
-  if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(value)) {
+  if (!/^[\+]?[[0-9]{10,14}$/im.test(value)) {
     return 'validations.phoneFormat';
   }
 
@@ -61,7 +61,7 @@ function validatePhoneNotRequired(value) {
     return false;
   }
 
-  if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(value)) {
+  if (!/^[\+]?[[0-9]{10,14}$/im.test(value)) {
     return 'validations.phoneFormat';
   }
 
