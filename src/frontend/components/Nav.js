@@ -110,7 +110,7 @@ export const Redirect = styled.a`
   display: block;
   width: ${({ disableNavDonate }) => disableNavDonate ? '100%' : '66.66%'};
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.newBlack};
+  background-color: ${({ theme }) => theme.colors.deepPurple};
   font-family: ${({ theme }) => theme.fonts.headerFamily};
   font-weight: bold;
   font-size: 12px;
