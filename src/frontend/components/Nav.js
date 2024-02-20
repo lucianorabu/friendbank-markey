@@ -19,7 +19,7 @@ import { STAFF_ROLE } from '../../shared/roles';
 const NavStack = styled.div`
   display: flex;
   flex-direction: column;
-  box-shadow: ${({ theme }) => theme.shadow};
+  /*box-shadow: ${({ theme }) => theme.shadow}*/;
 
   @media ${({ theme }) => theme.media.tablet} {
     margin-bottom: 24px;
