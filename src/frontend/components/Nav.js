@@ -40,7 +40,7 @@ const NavContainer = styled.div`
 `;
 
 const Logo = styled.a`
-  margin-left: 8px;
+  margin-left: 16px;
 
   img {
     margin: 16px 0;
