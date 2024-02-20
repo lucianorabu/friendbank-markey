@@ -416,6 +416,13 @@ export default function Dashboard() {
                     validator: validateName,
                   },
                   {
+                    fieldId: 'lastName',
+                    fieldType: SINGLE_LINE_TEXT_INPUT,
+                    isHalfWidth: true,
+                    label: getCopy('formLabels.lastName'),
+                    validator: validateName,
+                  },
+                  {
                     fieldId: 'zip',
                     fieldType: SINGLE_LINE_TEXT_INPUT,
                     isHalfWidth: true,

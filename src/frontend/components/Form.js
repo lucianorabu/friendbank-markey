@@ -543,11 +543,11 @@ export default function Form(props) {
               {getCopy('formLabels.backButton')}
             </FormBackButton>
           )}
-          <FormSubmitButton
+          {buttonCopy && <FormSubmitButton
             type="submit"
             disabled={isProcessingSubmit}
             data-track="form-submit-button"
-          >{buttonCopy}</FormSubmitButton>
+          >{buttonCopy}</FormSubmitButton>}
         </FormNavigationRow>
         {formError && (<FormError>{joinedFormError}</FormError>)}
         {showSmsDisclaimer && (

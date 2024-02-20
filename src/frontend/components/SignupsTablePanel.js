@@ -217,7 +217,7 @@ export default function SignupsTablePanel(props) {
     panelRef.current.scrollTop = 0;
     setTargetStep(0);
     setFormValues({});
-    updateSignup(selectedSignup.id, formValues);
+    //updateSignup(selectedSignup.id, formValues);
     setSuccessfullySubmitted(true);
   }
 
@@ -227,7 +227,7 @@ export default function SignupsTablePanel(props) {
 
   return (
     <PanelBackdrop onClick={onPanelBackdropClick} out={fadeOut}>
-      <Panel
+      <Panel className="edit-signup-panel"
         ref={(element) => panelRef.current = element}
         out={fadeOut}
       >
@@ -239,10 +239,11 @@ export default function SignupsTablePanel(props) {
             {getCopy('dashboard.signupTablePanelSaved')}
           </SuccessMessage>
         )}
+
         <Form
           onCompletion={onCompletion}
           steps={[{
-            buttonCopy: getCopy('formLabels.submit'),
+            buttonCopy: null,
             onStepSubmit: onSignupSubmit,
             fields: signupFields,
           }]}

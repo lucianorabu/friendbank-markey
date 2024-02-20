@@ -50,16 +50,24 @@ export default function Homepage(props) {
       email,
       password,
       firstName,
+      lastName,
+      phone,
       zip,
     } = formValues;
+
+    console.log(formValues);
 
     const payload = {
       email,
       password,
       firstName,
+      lastName,
+      phone,
       zip,
       emailFrequency: TRANSACTIONAL_EMAIL,
     };
+
+    console.log('saving user')
 
     return await makeFormApiRequest('/api/v1/user', 'post', payload);
   }

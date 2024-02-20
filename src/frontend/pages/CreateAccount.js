@@ -26,15 +26,20 @@ export const CREATE_ACCOUNT_ROUTE = '/friendbank/create-account';
 
 export default function CreateAccount() {
   async function onCreateAccount(formValues) {
-    const { email, password, firstName, zip } = formValues;
+    const { email, password, firstName, lastName, zip } = formValues;
+
+    console.log(formValues);
 
     const payload = {
       email,
       password,
       firstName,
+      lastName,
       zip,
       emailFrequency: TRANSACTIONAL_EMAIL,
     };
+
+    console.log('creating user');
 
     return await makeFormApiRequest('/api/v1/user', 'post', payload);
   }
@@ -72,6 +77,13 @@ export default function CreateAccount() {
               fieldType: SINGLE_LINE_TEXT_INPUT,
               isHalfWidth: true,
               label: getCopy('formLabels.firstName'),
+              validator: validateName,
+            },
+            {
+              fieldId: 'lastName',
+              fieldType: SINGLE_LINE_TEXT_INPUT,
+              isHalfWidth: true,
+              label: getCopy('formLabels.lastName'),
               validator: validateName,
             },
             {
