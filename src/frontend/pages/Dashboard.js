@@ -261,9 +261,10 @@ const PageCover = styled.div`
 const PageCoverImage = styled.img`
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  max-height: 1000px;
+  height: 100%;
 `;
 
 export default function Dashboard() {

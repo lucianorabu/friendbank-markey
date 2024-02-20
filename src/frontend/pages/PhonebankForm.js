@@ -23,7 +23,7 @@ const Layout = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 80vh;
+  /*min-height: 80vh;*/
   margin-bottom: 48px;
 `;
 

@@ -9,6 +9,7 @@ const theme = {
     darkBlue: '#00284a',
     green: '#009645',
     hotPink: '#eb0063',
+    softPink: '#f8baee',
     deepPurple: '#583b8f'
   },
   fonts: {

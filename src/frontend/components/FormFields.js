@@ -617,9 +617,10 @@ export const GalleryItemMedia = styled.div`
 
 export const GalleryItemImage = styled.img`
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  max-height: 1000px;
+  height: 100%;
 `;
 
 export function GalleryPickerField(props) {

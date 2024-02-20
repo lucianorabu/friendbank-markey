@@ -11,7 +11,7 @@ const Layout = styled.div`
   margin-bottom: 48px;
 
   @media ${({ theme }) => theme.media.tablet} {
-    min-height: 80vh;
+    /*min-height: 80vh;*/
   }
 
   @media ${({ theme }) => theme.media.desktop} {
@@ -66,9 +66,10 @@ const MediaPanel = styled.div`
 const MediaImage = styled.img`
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  max-height: 1000px;
+  height: 100%;
 `;
 
 const GlobalNavOverride = createGlobalStyle`
