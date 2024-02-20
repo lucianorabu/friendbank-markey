@@ -182,12 +182,12 @@ export default function SignupsTablePanel(props) {
     });
   }
 
-  signupFieldDump.push({
-    fieldId: 'note',
-    fieldType: MULTI_LINE_TEXT_INPUT,
-    label: getCopy('formLabels.note'),
-    validator: validateNote,
-  });
+  // signupFieldDump.push({
+  //   fieldId: 'note',
+  //   fieldType: MULTI_LINE_TEXT_INPUT,
+  //   label: getCopy('formLabels.note'),
+  //   validator: validateNote,
+  // });
 
   signupFieldDump[2].validator = validateZipNotRequired;
   signupFieldDump[3].validator = validatePhoneNotRequired;
