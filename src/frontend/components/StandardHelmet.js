@@ -10,7 +10,7 @@ export default function StandardHelmet() {
       <meta name="og:title" content={getCopy('homepage.formTitle')} />
       <meta property="og:description" content={getCopy('homepage.formSubtitle')} />
       <meta property="og:image" content={getConfig('card').source} />
-      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:card" content={getConfig('card').source} />
       <meta property="twitter:title" content={getCopy('homepage.formTitle')} />
       <meta property="twitter:description" content={getCopy('homepage.formSubtitle')} />
     </Helmet>
