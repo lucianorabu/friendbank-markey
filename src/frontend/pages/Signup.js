@@ -121,8 +121,8 @@ export default function Signup() {
         <title>{title}</title>
         <meta name="og:title" content={title} />
         <meta property="og:description" content={subtitle} />
-        <meta property="og:image" content={getConfig('card').source} />
-        <meta property="twitter:card" content={getConfig('card').source} />
+        <meta property="og:image" content="/img/voting-jamie-card.jpeg" />
+        <meta property="twitter:card" content="/img/voting-jamie-card.jpeg" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={subtitle} />
       </Helmet>
