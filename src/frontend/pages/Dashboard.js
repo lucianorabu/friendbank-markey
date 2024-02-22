@@ -156,7 +156,7 @@ const EditPageButton = styled(LinkButton)`
 `;
 
 const LogoutButton = styled(LinkButton)`
-  color: ${({ theme }) => theme.colors.hotPink};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 const SignupsHeaderRow = styled.div`

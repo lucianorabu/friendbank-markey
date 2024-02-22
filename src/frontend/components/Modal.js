@@ -25,7 +25,7 @@ const ModalContainer = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 800px;
-  background-color: ${({ theme }) => theme.colors.deepPurple};
+  background-color: ${({ theme }) => theme.colors.black};
   padding: 24px;
 
   ${WhiteBlueButton} {
@@ -72,7 +72,7 @@ const ModalCopyContainer = styled.div`
     cursor: pointer;
 
     &:hover {
-      color: ${({ theme }) => theme.colors.hotPink};
+      color: ${({ theme }) => theme.colors.red};
     }
   }
 `;

@@ -51,7 +51,7 @@ export const HelpText = styled(Label)`
   `}
 
   ${({ theme, isValidation }) => isValidation && css`
-    color: ${({ theme }) => theme.colors.hotPink};
+    color: ${({ theme }) => theme.colors.red};
     margin-left: 4px;
   `}
 `;
@@ -462,7 +462,7 @@ const CodeInputVerification = styled.span`
   `}
 
   ${({ isVerificationNotOk }) => isVerificationNotOk && css`
-    color: ${({ theme }) => theme.colors.hotPink};
+    color: ${({ theme }) => theme.colors.red};
     font-weight: bold;
   `}
 `;
@@ -607,7 +607,7 @@ export const GalleryItemMedia = styled.div`
   height: 100%;
 
   ${({ isChecked }) => isChecked && css`
-    outline: 4px solid ${({ theme }) => theme.colors.hotPink};
+    outline: 4px solid ${({ theme }) => theme.colors.red};
   `}
 
   ${({ isFocused }) => isFocused && css`

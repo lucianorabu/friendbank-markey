@@ -110,7 +110,7 @@ export const Redirect = styled.a`
   display: block;
   width: ${({ disableNavDonate }) => disableNavDonate ? '100%' : '66.66%'};
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.deepPurple};
+  background-color: ${({ theme }) => theme.colors.black};
   font-family: ${({ theme }) => theme.fonts.headerFamily};
   font-weight: bold;
   font-size: 12px;
@@ -134,7 +134,7 @@ export const DonateRedirect = styled.a`
   display: block;
   width: 33.33%;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.hotPink};
+  background-color: ${({ theme }) => theme.colors.red};
   font-family: ${({ theme }) => theme.fonts.headerFamily};
   font-weight: bold;
   font-size: 12px;
