@@ -11,7 +11,7 @@ const Chrome = styled.div`
   display: block;
   width: 100%;
   min-height: 100vh;
-  background-color: ${({ theme }) => theme.colors.softPink};
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 const PageContainer = styled.div`

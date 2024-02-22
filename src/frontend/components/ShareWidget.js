@@ -23,16 +23,16 @@ export const ShareContainer = styled.div`
 
 const themeMap = {
   primary: {
-    [DARK_THEME]: 'blue',
-    [LIGHT_THEME]: 'white',
+    [DARK_THEME]: 'yellow',
+    [LIGHT_THEME]: 'yellow',
   },
   icon: {
     [DARK_THEME]: 'blue',
     [LIGHT_THEME]: 'blue',
   },
   alt: {
-    [DARK_THEME]: 'darkBlue',
-    [LIGHT_THEME]: 'darkBlue',
+    [DARK_THEME]: 'yellow',
+    [LIGHT_THEME]: 'yellow',
   },
 };
 
@@ -78,8 +78,9 @@ const ShareButton = styled.a`
     border: 2px solid ${({ theme }) => getShareThemeColor(theme, 'alt')};
     background-color: ${({ theme }) => getShareThemeColor(theme, 'alt')};
 
+
     ${ShareButtonCopy} {
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.black};
     }
 
     ${ShareButtonIcon} {

@@ -36,7 +36,7 @@ const ModalContainer = styled.div`
 `;
 
 const ModalTitle = styled(DefaultTitle)`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.yellow};
 `;
 
 const ModalCopyContainer = styled.div`
@@ -48,7 +48,7 @@ const ModalCopyContainer = styled.div`
     font-family: ${({ theme }) => theme.fonts.mainFamily};
     font-weight: bold;
     font-size: 22px;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.yellow};
     margin-bottom: 4px;
   }
 
