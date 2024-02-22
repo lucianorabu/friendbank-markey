@@ -29,6 +29,7 @@ export default function EditPage(props) {
 
   const context = useApplicationContext();
   const role = useRole();
+  const copyText = 'A vote for Jamie means real change and improvements to our lives. Cheaper and better public transport. Thousands of new well-paid jobs. Protection for our beaches and countryside. Reduced bills through retrofitting our homes.And we know that Jamie delivers on what he says, because he’s already done it once.It’s up to us to make sure he can keep fighting for the North East. Let me know your with Jamie and help me reach my goal.';
 
   if (!context.page) {
     return <_404 />;
@@ -76,7 +77,7 @@ export default function EditPage(props) {
           fieldId: 'subtitle',
           fieldType: MULTI_LINE_TEXT_INPUT,
           label: getCopy('formLabels.subtitle'),
-          defaultValue: subtitle || getCopy('homepage.defaultSubtitle'),
+          defaultValue: subtitle || copyText,
           validator: validateSubtitle,
         },
         {

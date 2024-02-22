@@ -205,7 +205,7 @@ export default function Homepage(props) {
           fieldId: 'subtitle',
           fieldType: MULTI_LINE_TEXT_INPUT,
           label: getCopy('formLabels.subtitle'),
-          defaultValue: getCopy('homepage.defaultSubtitle'),
+          defaultValue: copyText,
           validator: validateSubtitle,
         },
         {
