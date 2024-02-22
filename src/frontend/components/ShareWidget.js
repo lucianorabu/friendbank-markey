@@ -24,15 +24,15 @@ export const ShareContainer = styled.div`
 const themeMap = {
   primary: {
     [DARK_THEME]: 'yellow',
-    [LIGHT_THEME]: 'yellow',
+    [LIGHT_THEME]: 'black',
   },
   icon: {
-    [DARK_THEME]: 'blue',
-    [LIGHT_THEME]: 'blue',
+    [DARK_THEME]: 'yellow',
+    [LIGHT_THEME]: 'black',
   },
   alt: {
     [DARK_THEME]: 'yellow',
-    [LIGHT_THEME]: 'yellow',
+    [LIGHT_THEME]: 'black',
   },
 };
 
@@ -80,7 +80,7 @@ const ShareButton = styled.a`
 
 
     ${ShareButtonCopy} {
-      color: ${({ theme }) => theme.colors.black};
+      color: ${({ theme }) => theme.colors.white};
     }
 
     ${ShareButtonIcon} {

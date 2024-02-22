@@ -9,7 +9,7 @@ import SplitScreen from '../components/SplitScreen';
 import Modal from '../components/Modal';
 import Form from '../components/Form';
 import { RADIO_FIELD } from '../components/FormFields';
-import ShareWidget, { DARK_THEME, ShareContainer } from '../components/ShareWidget';
+import ShareWidget, { DARK_THEME, LIGHT_THEME, ShareContainer } from '../components/ShareWidget';
 import signupContactFields from '../forms/signupContactFields';
 import signupIdFields from '../forms/signupIdFields';
 import makeLocaleLink from '../utils/makeLocaleLink';
@@ -147,7 +147,7 @@ export default function Signup() {
               {getCopy('signupPage.postSignupSubtitle').replace('{{FIRST_NAME}}', createdByFirstName)}
             </DefaultParagraph>
             <ShareWidget
-              theme={DARK_THEME}
+              theme={LIGHT_THEME}
               customShareText={`${title} ${subtitle}`}
             />
             <DefaultTitle>
