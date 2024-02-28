@@ -66,7 +66,7 @@ const ShareButton = styled.a`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: transparent;
+  background-color: '6b6b6b';
   border: 2px solid ${({ theme }) => getShareThemeColor(theme)};
   text-decoration: none;
   width: 100%;
