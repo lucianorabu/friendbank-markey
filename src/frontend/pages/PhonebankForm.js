@@ -115,7 +115,7 @@ export default function PhonebankForm() {
               {getCopy('phonebankPage.successfullySubmitted')}
             </SuccessMessage>
           )}
-          <DownBallotMapLink />
+          {/* <DownBallotMapLink /> */}
         </Container>
       </Layout>
     </React.Fragment>

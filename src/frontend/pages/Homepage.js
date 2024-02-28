@@ -133,7 +133,7 @@ export default function Homepage(props) {
   const steps = [
     {
       title: getCopy('homepage.formTitle'),
-      subtitle: copyText,
+      subtitle: getCopy('homepage.formSubtitle'),
       buttonCopy: getCopy('homepage.formButtonLabel'),
       onStepSubmit: onUserSubmit,
       showSmsDisclaimer: true,
@@ -223,7 +223,7 @@ export default function Homepage(props) {
     },
     {
       title: getCopy('homepage.formTitle'),
-      subtitle: copyText,
+      subtitle: getCopy('homepage.formSubtitle'),
       buttonCopy: getCopy('homepage.createButtonLabel'),
       onStepSubmit: onSignup,
       fields: [

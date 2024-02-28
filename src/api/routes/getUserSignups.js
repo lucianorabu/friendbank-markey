@@ -20,6 +20,12 @@ module.exports = ({ db }) => {
         recruitedBy: token.user._id.toString(),
       };
 
+      if (token.user.role == 'STAFF_ROLE') {
+        query = {
+          campaign: campaign._id.toString()
+        };
+      }
+
       const total = await signups.countDocuments(query);
 
       if (lastId) {
