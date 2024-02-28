@@ -1,6 +1,7 @@
 const { ObjectId } = require('mongodb');
 const apiErrorHandler = require('../utils/apiErrorHandler');
 const transformSignupResponse = require('../transformers/transformSignupResponse');
+const { STAFF_ROLE } = require('../../shared/roles');
 
 module.exports = ({ db }) => {
   async function getAllUserSignups(req, res) {
@@ -12,10 +13,16 @@ module.exports = ({ db }) => {
 
       const signups = db.collection('signups');
 
-      const query = {
+      var query = {
         campaign: campaign._id.toString(),
         recruitedBy: token.user._id.toString(),
       };
+
+      if (token.user.role == 'STAFF_ROLE') {
+        query = {
+          campaign: campaign._id.toString()
+        };
+      }
 
       const result = await signups.find(query, { limit: 1000 }).sort({ _id: -1 }).toArray();
 
