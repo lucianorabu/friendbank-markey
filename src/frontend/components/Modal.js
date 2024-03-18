@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import marked from 'marked';
-import ShareWidget, { LIGHT_THEME } from './ShareWidget';
+import ShareWidget, { DARK_THEME } from './ShareWidget';
 import { WhiteBlueButton } from './Buttons';
 import { DefaultTitle } from './Typography';
 
@@ -107,7 +107,7 @@ export default function Modal(props) {
           {modalTitle}
         </ModalTitle>
         <ModalCopyContainer dangerouslySetInnerHTML={{ __html: marked(modalCopy || '') }} />
-        <ShareWidget theme={LIGHT_THEME} customShareText={customShareText} />
+        <ShareWidget theme={DARK_THEME} customShareText={customShareText} />
         <WhiteBlueButton onClick={onClose}>{modalCloseLabel}</WhiteBlueButton>
       </ModalContainer>
     </ModalBackground>
