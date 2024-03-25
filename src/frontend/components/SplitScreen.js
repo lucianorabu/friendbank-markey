@@ -49,7 +49,6 @@ const ContentPanelContainer = styled.div`
 const MediaPanel = styled.div`
   display: block;
   width: 100%;
-  height: 40vh;
   position: relative;
 
   @media ${({ theme }) => theme.media.tablet} {
@@ -62,10 +61,10 @@ const MediaPanel = styled.div`
   }
 `;
 
-const MediaImage = styled.img`
+const MediaImage = styled.img` 
   display: block;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   max-height: 1000px;
   height: 100%;
